@@ -8,6 +8,7 @@
     height: 10vw;
     width: 100%;
     background: rgb(207, 140, 109);
+    z-index: 40;
 }
 .nav > .nav-header {
     display: inline;
@@ -54,8 +55,8 @@
     .nav > .nav-btn > label {
         display:inline-block;
         width: 50px;
-        height: 35px;
-        padding: 15px 0px 0px 15px;
+        height: 30px;
+        padding: 10px 0px 0px 10px;
     }
 
     .nav > .nav-btn > label:hover,
@@ -72,7 +73,7 @@
 
     .nav > .nav-links {
         position: absolute;
-        top: 50px;
+        top: 40px;
         display: block;
         width: 100%;
         background:rgb(122, 83, 65) ;
@@ -118,5 +119,24 @@
 
 .hero-img {
     width: 100%;
-    z-index: 0;
+    /* z-index: 0; */
+}
+
+/*////////////// ghoast button/////////////////// */
+ .ghoast-btn{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 30;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 24px;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: all .3s ease-out;
+}
+.ghoast-btn:hover{
+    background: rgba(255, 255, 255, 0.514);
+    text-shadow: 1px 1px 0px brown;
 }
